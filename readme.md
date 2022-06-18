@@ -1,10 +1,15 @@
-Example of using `vite-plugin-ssr` with Vue and Apollo GraphQL.
+Bug reproduction of using Apollo GraphQL with Vue and Vite 3.
 
 To run it:
 
 ```bash
-git clone git@github.com:brillout/vite-plugin-ssr
-cd vite-plugin-ssr/examples/graphql-apollo-vue/
-npm install
-npm run dev
+git clone git@github.com:brillout/graphql-apollo-vue_vite-3_bug-reproduction
+cd vite-plugin-ssr/examples/graphql-apollo-vue_vite-3_bug-reproduction/
+pnpm install
+pnpm run dev
+```
+
+Observe the error:
+
+```
 ```
