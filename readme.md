@@ -1,15 +1,29 @@
-Bug reproduction of using Apollo GraphQL with Vue and Vite 3.
+Bug reproduction.
 
 To run it:
 
 ```bash
-git clone git@github.com:brillout/graphql-apollo-vue_vite-3_bug-reproduction
-cd vite-plugin-ssr/examples/graphql-apollo-vue_vite-3_bug-reproduction/
+git clone git@github.com:brillout/graphql-apollo_vue-react-bug
+cd graphql-apollo_vue-react-bug/
 pnpm install
-pnpm run dev
+pnpm run build
+```
+
+Same as single line (copy paste me):
+
+```bash
+git clone git@github.com:brillout/graphql-apollo_vue-react-bug && cd graphql-apollo_vue-react-bug/ && pnpm install && pnpm run build
 ```
 
 Observe the error:
 
 ```
+transforming (98) renderer/app.js✘ [ERROR] Could not resolve "react"
+
+    node_modules/.pnpm/@apollo+client@3.6.8/node_modules/@apollo/client/react/hooks/useReactiveVar.js:1:36:
+      1 │ import { useEffect, useState } from 'react';
+        ╵                                     ~~~~~~~
+
+  You can mark the path "react" as external to exclude it from the bundle, which will remove this
+  error.
 ```
